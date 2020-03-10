@@ -1,2 +1,2 @@
-# js-review
-js查缺补漏
+# fe-review
+查缺补漏
