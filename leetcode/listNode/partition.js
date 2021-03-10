@@ -18,9 +18,8 @@
    var right = new ListNode(-1);
    var rightPos = right;
 
-  //  left.next = head;
    var cur = head;
-   while (cur.next !== null) {
+   while (cur !== null) {
     if (cur.val < x) {
       leftPos.next = cur;
       leftPos = leftPos.next;
@@ -28,9 +27,10 @@
       rightPos.next = cur;
       rightPos = rightPos.next;
     }
-    cur = cur.next;
+    cur = cur.next || null;
    }
 
+   rightPos.next = null; // 切断原有的链表！！！
    leftPos.next = right.next;
    return left.next;
 };
