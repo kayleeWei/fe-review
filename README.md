@@ -7,3 +7,4 @@
 ## 网络相关
 1. 浏览器缓存：cache-control、expires
 2. 状态码
+3. Ajax (跨域问题的解决)
